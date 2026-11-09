@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#151612"><meta name="description" content="从湖畔夜景走进套房，在客厅与卧室之间移步换景。">
+<title>慢屿 MAISON LENTE · 湖畔漫游</title>
+<link rel="preload" as="image" href="./assets/phototour/arrival-start.webp">
+<link rel="stylesheet" href="./photo-tour.css">
+</head>
+<body>
+<div id="stage" class="stage" aria-hidden="true"></div>
+<div class="shade"></div>
+<div id="scene-veil" aria-hidden="true"></div>
+<header><button id="home" class="brand" aria-label="返回酒店外景"><i>m.</i><span>MAISON LENTE<small>慢屿 · 湖畔漫游</small></span></button><button id="replay" class="line">重看开场 <span>↺</span></button></header>
+<main aria-label="酒店漫游">
+ <svg id="facade" viewBox="0 0 2048 1152" preserveAspectRatio="none" aria-label="酒店立面" hidden>
+  <polygon id="suite-window" points="1372,626 1448,622 1442,684 1370,690" role="button" tabindex="0" aria-label="进入套房"><title>进入套房</title></polygon>
+ </svg>
+ <span id="suite-tag" hidden>可进入套房</span>
+ <span id="window-note" role="status" hidden>暂未开放</span>
+ <button id="hotspot" type="button" class="room-dot" hidden></button>
+ <button id="back-point" type="button" class="room-dot" hidden></button>
+ <div id="intro-controls"><button class="line" id="skip">跳过开场 <span>↗</span></button></div>
+ <section class="story" id="story" aria-live="polite">
+  <p id="chapter" class="eyebrow">01 / LAKESIDE ARRIVAL</p>
+  <h1 id="title">沿湖而来，<br>走进灯火。</h1>
+  <p id="description">越过湖岸，靠近亮起的屋檐。</p>
+ </section>
+
+</main>
+<footer><span>LAKESIDE JOURNEY</span><span id="position">01 / 04</span></footer>
+<script type="module" src="./main.js"></script>
+</body></html>
